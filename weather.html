@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Weather App</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>	
+	</head>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Russ LaScala</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a></li>
+				<li><a href="#"><i class="fa fa-rss fa-fw" aria-hidden="true"></i>Blog</a></li>
+				<li><a href="#"><i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>Work</a></li>
+				<li><a href="#"><i class="fa fa-address-book-o fa-fw" aria-hidden="true"></i>Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<body>
+		<h1>Weather Forcast</h1>
+		<div class="row">
+			<div class="col-sm-4">
+				<div id ="zipForm"><p id="localFor">Local forecast by ZIP code </p><input type="number" class="textfield" placeholder="Enter ZIP code ..." id= "zipcode">
+				<button  type="submit" id="goButton">Go</button></input> 
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="weather-app">
+					<div class="left">
+						<div class="temperature"><span id="temperature">0</span>&deg;</div> 
+						<div class="location"><span id="location">Unknown</span></div>
+						<div class="ctof"><input class="toggle" type="checkbox" id="check" /></div>
+					</div>	
+					<div class="right">
+						<div class="top">
+							<img id="icon" width="75px" src="imgs/codes/200.png" />
+						</div>
+						<div class="bottom">
+							<div class="humidity">
+								<img src="imgs/humidity.png" height="16px" />
+								<span id="humidity">0</span>%
+							</div>
+								  
+							<div class="wind">
+								<span id="wind">0</span> mph <span id="direction">N</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="row">
+			<div class="col-sm-16">
+				<!-- Google map -->
+				<div id="map"></div>
+			</div>
+		</div>
+		<footer>
+	            <div class="col-md-12">
+
+                <div class="footer-socials mb-5 flex-center">
+
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook fa-lg white-text mr-md-4" id ="icon"> </i></a>
+                    <!--Twitter-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter fa-lg white-text mr-md-4" id ="icon"> </i></a>
+                    <!--Google +-->
+                    <a class="icons-sm gplus-ic"><i class="fa fa-google-plus fa-lg white-text mr-md-4" id ="icon"> </i></a>
+                    <!--Linkedin-->
+                    <a class="icons-sm li-ic"><i class="fa fa-linkedin fa-lg white-text mr-md-4" id ="icon"> </i></a>
+                    <!--Instagram-->
+                    <a class="icons-sm ins-ic"><i class="fa fa-instagram fa-lg white-text mr-md-4" id ="icon"> </i></a>
+                </div>
+            </div>
+        <p>&copy; Russell LaScala 2017</p>
+	</footer>
+	<script src="script.js"></script>
+  </body>
+</html>

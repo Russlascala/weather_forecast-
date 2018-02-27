@@ -1,0 +1,173 @@
+h1 {
+	text-align: center;
+}
+
+#zipForm {
+	/*border: 1px solid red;*/
+	margin: auto;
+	margin-top: 1em;
+	text-align: center;
+}
+
+#zipcode {
+	width: 150px;
+}
+
+#localFor {
+	margin-right: 24px;
+    margin-bottom: -1px;
+}
+#map {
+	height: 300px;
+	max-width: 50%;
+	border: 1px solid #333;
+	margin-top: 1em;
+	margin-left: 4em;
+	
+}
+
+.weather-app {
+    margin: auto;
+    max-width: 90%;
+    height: 170px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+    text-align:center;
+    font-family: "Mono";
+	margin-top: 10px;
+}
+
+.left {
+    float: left;
+    background: #052b50;
+    padding:10px;
+    width:50%;
+    height:100%;
+    color:white;
+}
+
+.temperature {
+    margin-top:30px;
+	
+    margin-bottom:5px;
+    font-size:32px;
+    font-weight: bold;
+    width: 150px;
+}
+
+.location {
+	
+    font-size: 18px;
+    width:100%;
+    width:200px;
+}
+
+.right {
+    float: right;
+    width:50%;
+    height:100%;
+}
+
+.top {
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    background: #9EC9F6;
+}
+
+.top img {
+    margin-top: 15px;
+}
+
+.bottom {
+    height: 70px;
+    background: #81bfa2;
+    color: white;
+    font-weight: bold;
+}
+
+.humidity {
+    padding: 8px;
+}
+.wind {
+	padding: ;
+}
+
+/*----------------START OF SLIDER STYLE-------------------*/
+.toggle {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #707070;
+    transition: background-color ease 0.3s;
+}
+
+.toggle:before {
+	content: "\00b0 C \00b0 F";
+	display: block;
+	position: absolute;
+	z-index: 2;
+	width: 21px;
+	height: 21px;
+	background: #fff;
+	left: 2px;
+	top: 2px;
+	border-radius: 50%;
+	font: 10px/28px Helvetica;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-indent: -20px;
+	word-spacing: 37px;
+	color: #fff;
+	text-shadow: -1px -1px rgba(0,0,0,0.15);
+	white-space: nowrap;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+input#check.toggle {
+	outline: 0;
+}
+.toggle:checked {
+	background-color: #4286f4;
+}
+.toggle:checked:before {
+	left: 27px;
+	text-decoration:none;
+}
+/*----------------END OF SLIDER STYLE-------------------*/
+
+
+
+#icon {
+    padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+footer{
+	margin-top: 3em;
+	text-align: center;
+	padding: 1em;
+	background-color: #d7dfed;
+}
+
+/* TO DO 
+	- make the toggle switch c to f change on the check and uncheck 
+
+	- ALLOW ENTER TO SUBMIT GO BUTTON (js)
+	
+	- STYLE WEATHER OUTPUTS 
+
+
+
+*/
